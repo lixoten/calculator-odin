@@ -1,0 +1,119 @@
+* {
+    font-size: 16px;
+    padding: 0;
+}
+
+#container {
+    /*width: 200px;*/
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 1fr;
+
+    gap: 8px;
+    border: 1px solid blue;
+    border-radius: 16px;
+    padding: 8px;
+    background-color: #f4f4f4;
+    box-shadow: 5px 5px 5px 5px lightsteelblue;
+    margin: 8px;
+}
+
+#head {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: left;
+}
+
+#git {
+    justify-self: end;
+}
+#git img {
+    margin: 4px;
+    width: 48px;
+}
+
+#alert-message {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    background-color: cornsilk;
+}
+
+#display-console {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+#display-console {
+    background-color: skyblue;
+    border-radius: 8px;
+    text-align: right;
+    padding: 8px;
+}
+#display-hint {
+    /*display: none; !*Debug - take out*!*/
+    font-size: 1.2em;
+    color: gray;
+    margin-bottom: 5px;
+    min-height: 1.2em;
+}
+#display-result {
+    font-size: 1.2em;
+}
+
+.pad {
+    padding: 8px;
+    font-size: 1.7em;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px lightgray;
+}
+.pad.clear {
+    background-color: cornsilk;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.pad.del {
+    background-color: cornsilk;
+}
+.pad.equal {
+    background-color: cornsilk;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+#board {
+    height: max-content;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    /*Debug*/
+    /*display: none;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: start;
+    gap: 4px;
+}
+
+#board .num1,
+#board .board-op,
+#board .num2 {
+    background-color: aliceblue;
+    border: 1px solid gray;
+    line-height: 3em;
+}
+#board .num1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+#board .board-op {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+#board .num2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
