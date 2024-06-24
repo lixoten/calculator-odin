@@ -2,7 +2,7 @@
 <hr />
 
 <p align="center">
-  <img src="./assets/screenshot.png" alt="screenshot" width="45%"/>  
+  <img src="assets/screenshot1.png" alt="screenshot" width="45%"/>  
 </p>
 <h2 align="center">
 <a href="https://lixoten.github.io/calculator-odin/">DEMO</a>
